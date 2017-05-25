@@ -1,0 +1,22 @@
+
+.table tbody tr td
+{
+	line-height:2;
+	border: 1px solid #f3f3f4;
+}
+.headerTable{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+
+.table thead th
+{
+	text-align: center;
+}
+
+.table thead
+{
+	background: #f3f3f4;
+}

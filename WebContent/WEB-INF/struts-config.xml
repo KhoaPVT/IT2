@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts 
+Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="autDPHKMForm" type="form.AUTDPHKMForm"/>	
+	</form-beans>
+	<action-mappings>		
+		<action input="/addAUTDPHKM.jsp" name="autDPHKMForm"
+			path="/addAUTDPHKM" scope="request" type="action.AddAUTDPHKMAction">
+			<forward name="addAUTDPHKM" path="/addAUTDPHKM.jsp" />
+			<forward name="error" path="/addAUTDPHKM.jsp" />
+			<forward name="addSuccess" path="/addAUTDPHKM.jsp"/>
+			<forward name="cancel" path="/success.jsp"/>
+			
+		</action>
+		
+		<action input="/addAUTDPHKM.jsp" name="autDPHKMForm"
+			path="/addAjaxAUTDPHKM" scope="request" type="action.Ajax">
+		</action>
+								
+	</action-mappings>
+	<message-resources parameter="action.ApplicationResources" />
+</struts-config>

@@ -1,0 +1,29 @@
+.error{
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+.header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 45px;
+	color: #FFF;
+	background-color: #33334d;
+	text-align: center;
+}
+
+td input{
+	height: 30px;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: #f3f3f4;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: white;
+}
